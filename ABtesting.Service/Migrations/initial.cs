@@ -15,7 +15,7 @@ namespace ABtesting.Service.Migrations
                 name: "Devices",
                 columns: table => new
                 {
-                    DeviceToken = table.Column<Guid>(type: "uuid", nullable: false),
+                    DeviceToken = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Type = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
@@ -27,7 +27,7 @@ namespace ABtesting.Service.Migrations
                 name: "Experiments",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Key = table.Column<string>(type: "text", nullable: false),
                     Value = table.Column<string>(type: "text", nullable: false),
                     ChanceInPercents = table.Column<int>(type: "integer", nullable: false)
@@ -41,9 +41,9 @@ namespace ABtesting.Service.Migrations
                 name: "DevicesExperiments",
                 columns: table => new
                 {
-                    DeviceToken = table.Column<Guid>(type: "uuid", nullable: false),
-                    ExperimentId = table.Column<Guid>(type: "uuid", nullable: false),
-                    DeviceToken1 = table.Column<Guid>(type: "uuid", nullable: true)
+                    DeviceToken = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExperimentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeviceToken1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -29,7 +29,7 @@ namespace ABtesting.Service.Migrations
                 {
                     b.Property<Guid>("DeviceToken")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Type")
                         .HasColumnType("text");
@@ -42,13 +42,13 @@ namespace ABtesting.Service.Migrations
             modelBuilder.Entity("ABtesting.Service.DevicesExperiment", b =>
                 {
                     b.Property<Guid>("ExperimentId")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("DeviceToken")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeviceToken1")
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("ExperimentId", "DeviceToken");
 
@@ -61,7 +61,7 @@ namespace ABtesting.Service.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("ChanceInPercents")
                         .HasColumnType("integer");

@@ -11,7 +11,7 @@ builder.Services.AddScoped<IDevicesExperimentService, DevicesExperimentService>(
 builder.Services.AddTransient<IRandomProvider, RandomProvider>();
 builder.Services.AddScoped<IStatisticService, StatisticService>();
 builder.Services.AddDbContextPool<ApplicationContext>(opt =>
-    opt.UseNpgsql(builder.Configuration.GetConnectionString("Applications")));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("Applications")));
 
 var app = builder.Build();
 

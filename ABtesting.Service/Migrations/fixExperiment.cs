@@ -18,11 +18,11 @@ namespace ABtesting.Service.Migrations
             migrationBuilder.AlterColumn<Guid>(
                 name: "DeviceToken1",
                 table: "DevicesExperiments",
-                type: "uuid",
+                type: "uniqueidentifier",
                 nullable: false,
                 defaultValue: new Guid("00000000-0000-0000-0000-000000000000"),
                 oldClrType: typeof(Guid),
-                oldType: "uuid",
+                oldType: "uniqueidentifier",
                 oldNullable: true);
 
             migrationBuilder.AddForeignKey(
@@ -44,10 +44,10 @@ namespace ABtesting.Service.Migrations
             migrationBuilder.AlterColumn<Guid>(
                 name: "DeviceToken1",
                 table: "DevicesExperiments",
-                type: "uuid",
+                type: "uniqueidentifier",
                 nullable: true,
                 oldClrType: typeof(Guid),
-                oldType: "uuid");
+                oldType: "uniqueidentifier");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_DevicesExperiments_Devices_DeviceToken1",

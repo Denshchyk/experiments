@@ -51,7 +51,7 @@ namespace ABtesting.Service.Migrations
             migrationBuilder.AddColumn<Guid>(
                 name: "DeviceToken1",
                 table: "DevicesExperiments",
-                type: "uuid",
+                type: "uniqueidentifier",
                 nullable: false,
                 defaultValue: new Guid("00000000-0000-0000-0000-000000000000"));
 
