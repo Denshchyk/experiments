@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SHB7AFNkpZx2eWj3tORH9RZYnU+ZRVpVqWGG5EJbmFc=",
+  "Source": "ABtesting.Services.Web",
+  "BasePath": "_content/ABtesting.Services.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
