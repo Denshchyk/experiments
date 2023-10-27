@@ -42,6 +42,8 @@ public class DevicesRepository : IDevicesRepository
     /// <returns>An <see cref="IEnumerable{DeviceModel}"/> representing all devices and their details.</returns>
     public async Task<IEnumerable<Device>> GetAllDevices()
     {
-        return _context.Devices.Include(x => x.DevicesExperiments).ToList();
+        return await _context.Devices
+            .Include(x => x.DevicesExperiments)
+            .ToListAsync();
     }
 }

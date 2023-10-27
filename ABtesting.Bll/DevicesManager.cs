@@ -1,8 +1,9 @@
+using ABtesting.Dall.MainDbRepositories;
 using ABtesting.Service;
 
 namespace ABtesting.Bll;
 
-public class DevicesManager
+public class DevicesManager : IDevicesManager
 {
     private readonly IDevicesRepository _devicesRepository;
 
@@ -21,7 +22,7 @@ public class DevicesManager
     }
     public async Task<IEnumerable<DeviceModel>> GetAllDevices()
     {
-        var devices = _devicesRepository.GetAllDevices();
-        return devices.Select(x => new DeviceModel(x.DeviceToken, x.Type));
+        var devices = await _devicesRepository.GetAllDevices();
+        return devices.Select(device => new DeviceModel( { DeviceToken = device.DeviceToken, Type = device.Type }).ToList();
     }
 }

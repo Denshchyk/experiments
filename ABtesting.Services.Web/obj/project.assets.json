@@ -1161,7 +1161,7 @@
           }
         }
       },
-      "ABtesting.Bll.Command/1.0.0": {
+      "ABtesting.Bll.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1171,10 +1171,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11"
         },
         "compile": {
-          "bin/placeholder/ABtesting.Bll.Command.dll": {}
+          "bin/placeholder/ABtesting.Bll.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ABtesting.Bll.Command.dll": {}
+          "bin/placeholder/ABtesting.Bll.Common.dll": {}
         }
       },
       "ABtesting.Dall.MainDbRepositories/1.0.0": {
@@ -3150,10 +3150,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "ABtesting.Bll.Command/1.0.0": {
+    "ABtesting.Bll.Common/1.0.0": {
       "type": "project",
-      "path": "../ABtesting.Bll.Command/ABtesting.Bll.Command.csproj",
-      "msbuildProject": "../ABtesting.Bll.Command/ABtesting.Bll.Command.csproj"
+      "path": "../ABtesting.Bll.Common/ABtesting.Bll.Common.csproj",
+      "msbuildProject": "../ABtesting.Bll.Common/ABtesting.Bll.Common.csproj"
     },
     "ABtesting.Dall.MainDbRepositories/1.0.0": {
       "type": "project",
@@ -3163,7 +3163,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ABtesting.Bll.Command >= 1.0.0",
+      "ABtesting.Bll.Common >= 1.0.0",
       "ABtesting.Dall.MainDbRepositories >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
@@ -3206,8 +3206,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Bll.Command\\ABtesting.Bll.Command.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Bll.Command\\ABtesting.Bll.Command.csproj"
+            "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Bll.Common\\ABtesting.Bll.Common.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Bll.Common\\ABtesting.Bll.Common.csproj"
             },
             "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Dall.MainDbRepositories\\ABtesting.Dall.MainDbRepositories.csproj": {
               "projectPath": "C:\\Users\\User\\source\\repos\\experiments\\ABtesting.Dall.MainDbRepositories\\ABtesting.Dall.MainDbRepositories.csproj"

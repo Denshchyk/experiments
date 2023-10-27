@@ -1,7 +1,8 @@
-using ABtesting.DevicesExperiments;
+using ABtesting.Dall.MainDbRepositories;
 using ABtesting.Experiments;
 using ABtesting.Service;
 using Microsoft.AspNetCore.Mvc;
+using IDevicesExperimentRepository = ABtesting.DevicesExperiments.IDevicesExperimentRepository;
 
 namespace Testing.Controllers;
 

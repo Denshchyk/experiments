@@ -1,3 +1,5 @@
+using ABtesting.Service;
+
 namespace ABtesting.Dall.MainDbRepositories;
 
 public class RandomProvider : IRandomProvider

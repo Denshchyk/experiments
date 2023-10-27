@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABtesting.Services.Web", "ABtesting.Services.Web\ABtesting.Services.Web.csproj", "{23E68466-E408-453C-88A4-6DE4B2547797}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABtesting.Bll.Command", "ABtesting.Bll.Command\ABtesting.Bll.Command.csproj", "{973D7CA1-A52D-4BB3-9F45-E8FE25E8D04E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABtesting.Bll.Common", "ABtesting.Bll.Common\ABtesting.Bll.Common.csproj", "{973D7CA1-A52D-4BB3-9F45-E8FE25E8D04E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABtesting.Bll", "ABtesting.Bll\ABtesting.Bll.csproj", "{71E40D6B-71C7-4E52-A0FA-4102E7FDF3F6}"
 EndProject

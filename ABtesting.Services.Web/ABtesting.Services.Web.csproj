@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ABtesting.Bll.Command\ABtesting.Bll.Command.csproj" />
+      <ProjectReference Include="..\ABtesting.Bll.Common\ABtesting.Bll.Common.csproj" />
       <ProjectReference Include="..\ABtesting.Dall.MainDbRepositories\ABtesting.Dall.MainDbRepositories.csproj" />
     </ItemGroup>
 

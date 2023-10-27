@@ -25,7 +25,7 @@ namespace ABtesting.Service.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ABtesting.Bll.Command.Device", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.Device", b =>
                 {
                     b.Property<Guid>("DeviceToken")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace ABtesting.Service.Migrations
                     b.ToTable("Devices");
                 });
 
-            modelBuilder.Entity("ABtesting.Bll.Command.DevicesExperiment", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.DevicesExperiment", b =>
                 {
                     b.Property<Guid>("ExperimentId")
                         .HasColumnType("uniqueidentifier");
@@ -54,7 +54,7 @@ namespace ABtesting.Service.Migrations
                     b.ToTable("DevicesExperiments");
                 });
 
-            modelBuilder.Entity("ABtesting.Bll.Command.Experiment", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.Experiment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -76,15 +76,15 @@ namespace ABtesting.Service.Migrations
                     b.ToTable("Experiments");
                 });
 
-            modelBuilder.Entity("ABtesting.Bll.Command.DevicesExperiment", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.DevicesExperiment", b =>
                 {
-                    b.HasOne("ABtesting.Bll.Command.Device", "Device")
+                    b.HasOne("ABtesting.Bll.Common.Device", "Device")
                         .WithMany("DevicesExperiments")
                         .HasForeignKey("DeviceToken")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ABtesting.Bll.Command.Experiment", "Experiment")
+                    b.HasOne("ABtesting.Bll.Common.Experiment", "Experiment")
                         .WithMany("DevicesExperiments")
                         .HasForeignKey("ExperimentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -95,12 +95,12 @@ namespace ABtesting.Service.Migrations
                     b.Navigation("Experiment");
                 });
 
-            modelBuilder.Entity("ABtesting.Bll.Command.Device", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.Device", b =>
                 {
                     b.Navigation("DevicesExperiments");
                 });
 
-            modelBuilder.Entity("ABtesting.Bll.Command.Experiment", b =>
+            modelBuilder.Entity("ABtesting.Bll.Common.Experiment", b =>
                 {
                     b.Navigation("DevicesExperiments");
                 });

@@ -18,14 +18,14 @@ public class DevicesExperimentRepository : IDevicesExperimentRepository
     /// </summary>
     /// <param name="deviceToken">The unique identifier of the device.</param>
     /// <param name="key">The key associated with the experiment.</param>
-    /// <returns>An <see cref="ExperimentModel"/> representing the added experiment.</returns>
-    public async Task<ExperimentModel> AddRandomExperimentToDeviceAsync(Guid deviceToken, string key)
+   
+    public async Task<Experiment> AddRandomExperimentToDeviceAsync(Guid deviceToken, string key)
     {
         var randomExperiment = GetRandomExperiment(key);
         var addDevicesExperiment = new DevicesExperiment {DeviceToken = deviceToken, ExperimentId = randomExperiment.Id};
-        await _context.DevicesExperiments.AddAsync(addDevicesExperiment);
+        await _context.DevicesExperiments.AddAsync(addDevicesExperiment); 
         await _context.SaveChangesAsync();
-        return new ExperimentModel(randomExperiment.Id, randomExperiment.Key, randomExperiment.Value, randomExperiment.ChanceInPercents);
+        return randomExperiment;
     }
     
     /// <summary>
@@ -37,14 +37,13 @@ public class DevicesExperimentRepository : IDevicesExperimentRepository
     /// An <see cref="ExperimentModel"/> representing the experiment with the specified key if found;
     /// otherwise, returns <c>null</c>.
     /// </returns>
-    public async Task<ExperimentModel?> GetAllExperimentsForDeviceAsync(Guid deviceToken, string key)
+    public async Task<Experiment?> GetAllExperimentsForDeviceAsync(Guid deviceToken, string key)
     {
         var devicesExperiments = _context.DevicesExperiments.Include(x => x.Experiment)
             .Where(de => de.DeviceToken == deviceToken);
         if (await devicesExperiments.AnyAsync())
         {
-            var experimentWithKey = devicesExperiments.FirstOrDefault(x=> x.Experiment.Key == key)!.Experiment;
-            return new ExperimentModel(experimentWithKey.Id, experimentWithKey.Key, experimentWithKey.Value, experimentWithKey.ChanceInPercents);
+            return devicesExperiments.FirstOrDefault(x=> x.Experiment.Key == key)!.Experiment;
         }
         return null;
     }

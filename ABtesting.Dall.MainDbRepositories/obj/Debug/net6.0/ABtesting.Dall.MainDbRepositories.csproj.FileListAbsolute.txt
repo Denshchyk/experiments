@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.AssemblyInfo.cs
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\bin\Debug\net6.0\ABtesting.Dall.MainDbRepositories.deps.json
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\bin\Debug\net6.0\ABtesting.Dall.MainDbRepositories.dll
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\bin\Debug\net6.0\ABtesting.Dall.MainDbRepositories.pdb
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.dll
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\refint\ABtesting.Dall.MainDbRepositories.dll
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ABtesting.Dall.MainDbRepositories.pdb
+C:\Users\User\source\repos\experiments\ABtesting.Dall.MainDbRepositories\obj\Debug\net6.0\ref\ABtesting.Dall.MainDbRepositories.dll

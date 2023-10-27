@@ -50,9 +50,8 @@ public class StatisticRepository : IStatisticRepository
     /// Retrieves a list of all experiments including their associated information asynchronously.
     /// </summary>
     /// <returns>An <see cref="IEnumerable{ExperimentModel}"/> representing all experiments and their details.</returns>
-    public async Task<IEnumerable<ExperimentModel>> GetAllExperiments()
+    public async Task<IEnumerable<Experiment>> GetAllExperiments()
     {
-        var experiments = await _context.Experiments.Include(x => x.DevicesExperiments).ToListAsync();
-        return experiments.Select(x => new ExperimentModel(x.Id, x.Key, x.Value, x.ChanceInPercents));
+         return await _context.Experiments.Include(x => x.DevicesExperiments).ToListAsync();
     }
 }
